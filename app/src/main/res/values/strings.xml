@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">Devintensive</string>
+    <string name="app_name">Исаков Владислав</string>
+    <string name="string_vk_profile">Профиль VK</string>
+    <string name="string_email">Email</string>
+    <string name="string_phone_number">Мобильный телефон</string>
+    <string name="string_projects_count_desc">Проектов</string>
+    <string name="string_code_lines_desc">Написано строк кода</string>
+    <string name="string_rating_desc">Рейтинг</string>
+    <string name="string_repository">Репозиторий</string>
+    <string name="string_about">О себе</string>
+
+    <string name="string_mail_info">isakovvd@yandex.ru</string>
+    <string name="string_vk_info">https://vk.com/id6509564</string>
+    <string name="string_github_info">https://github.com/isakovvd/DevIntensive</string>
+    <string name="string_inform">Метеорный дождь неустойчив. Спектральная картина традиционно оценивает экваториальный тропический год. Перигей выслеживает терминатор - это солнечное затмение предсказал ионянам Фалес Милетский. Бесспорно, женщина-космонавт оценивает спектральный класс.</string>
+
+    <string name="string_value_1">5</string>
+    <string name="string_value_2">100500</string>
+    <string name="string_value_3">7</string>
 </resources>
