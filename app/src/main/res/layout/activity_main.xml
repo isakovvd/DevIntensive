@@ -1,16 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".ui.activities.MainActivity">
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:tools="http://schemas.android.com/tools"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            tools:context=".ui.activities.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--user information bar-->
+        <LinearLayout
+            style="@style/infoBar">
+
+            <LinearLayout
+                style="@style/infoBarEl.side">
+
+                <TextView
+                    style="@style/infoBarText.value"
+                    android:text="@string/string_value_1"/>
+
+                <TextView
+                    style="@style/infoBarText.description"
+                    android:text="@string/string_rating_desc"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/infoBarSep">
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/infoBarEl.central">
+
+                <TextView
+                    style="@style/infoBarText.value"
+                    android:text="@string/string_value_2"/>
+
+                <TextView
+                    style="@style/infoBarText.description"
+                    android:text="@string/string_code_lines_desc"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/infoBarSep">
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/infoBarEl.side">
+
+                <TextView
+                    style="@style/infoBarText.value"
+                    android:text="@string/string_value_3"/>
+
+                <TextView
+                    style="@style/infoBarText.description"
+                    android:text="@string/string_projects_count_desc"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/infoListItem">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/call_icon"/>
+
+            <LinearLayout
+                style="@style/infoContent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        style="@style/infoEditText"
+                        android:hint="@string/string_phone_number"
+                        android:inputType="phone"
+                        android:text="89001234567"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <ImageView
+                style="@style/icon.right"
+                android:src="@drawable/phone_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/infoListItem">
+        </LinearLayout>
+        <!--email-->
+        <LinearLayout
+            style="@style/infoItemEl">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/email_icon_black"/>
+
+            <LinearLayout
+                style="@style/infoContent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        style="@style/infoEditText"
+                        android:hint="@string/string_email"
+                        android:inputType="textEmailAddress"
+                        android:linksClickable="true"
+                        android:text="@string/string_mail_info"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <ImageView
+                style="@style/icon.right"
+                android:src="@drawable/send_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/infoListItem">
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/infoItemEl">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/vk_icon"/>
+
+            <LinearLayout
+                style="@style/infoContent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        style="@style/infoEditText"
+                        android:hint="@string/string_vk_profile"
+                        android:inputType="textUri"
+                        android:linksClickable="true"
+                        android:text="@string/string_vk_info"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <ImageView
+                style="@style/icon.right"
+                android:src="@drawable/eye_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/infoListItem">
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/infoItemEl">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/github_icon"/>
+
+            <LinearLayout
+                style="@style/infoContent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        style="@style/infoEditText"
+                        android:hint="@string/string_repository"
+                        android:inputType="textUri"
+                        android:linksClickable="true"
+                        android:text="@string/string_github_info"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <ImageView
+                style="@style/icon.right"
+                android:src="@drawable/eye_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/infoListItem">
+        </LinearLayout>
+        <!--about-->
+        <LinearLayout
+            style="@style/infoItemEl">
+
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/acc_icon"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_medium_32"
+                android:layout_marginRight="@dimen/spacing_normal_16"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        style="@style/infoEditText"
+                        android:hint="@string/string_about"
+                        android:inputType="textMultiLine"
+                        android:text="@string/string_inform"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <ImageView
+                style="@style/icon.right"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
