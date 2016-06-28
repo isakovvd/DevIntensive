@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Исаков Владислав</string>
+    <string name="app_name">@string/string_name</string>
+    <string name="string_name">Исаков Владислав</string>
     <string name="string_vk_profile">Профиль VK</string>
     <string name="string_email">Email</string>
     <string name="string_phone_number">Мобильный телефон</string>
@@ -9,6 +10,7 @@
     <string name="string_repository">Репозиторий</string>
     <string name="string_about">О себе</string>
 
+    <string name="string_phone_info">79001234567</string>
     <string name="string_mail_info">isakovvd@yandex.ru</string>
     <string name="string_vk_info">https://vk.com/id6509564</string>
     <string name="string_github_info">https://github.com/isakovvd/DevIntensive</string>
@@ -17,4 +19,9 @@
     <string name="string_value_1">5</string>
     <string name="string_value_2">100500</string>
     <string name="string_value_3">7</string>
+
+    <string name="team">Команда</string>
+    <string name="user_profile">Мой профиль</string>
+
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
 </resources>
