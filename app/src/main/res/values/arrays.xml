@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="user_info">
+        <item>@id/phone_et</item>
+        <item>@id/email_et</item>
+        <item>@id/vk_et</item>
+        <item>@id/git_et</item>
+        <item>@id/about_et</item>
+    </string-array>
+</resources>

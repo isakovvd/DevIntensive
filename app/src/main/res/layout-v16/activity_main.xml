@@ -18,7 +18,7 @@
             <android.support.design.widget.CollapsingToolbarLayout
                 android:id="@+id/collapsing_toolbar"
                 style="@style/match_wrap"
-                app:contentScrim="@color/colorPrimaryDark"
+                app:contentScrim="@color/colorPrimary"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
                 <ImageView
@@ -36,8 +36,7 @@
 
         <android.support.v4.widget.NestedScrollView
             style="@style/match_wrap"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            android:fitsSystemWindows="true">
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
             <LinearLayout
                 style="@style/match_wrap"
