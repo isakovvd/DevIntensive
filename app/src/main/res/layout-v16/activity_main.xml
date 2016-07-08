@@ -21,9 +21,45 @@
                 app:contentScrim="@color/colorPrimary"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-                <ImageView
-                    android:id="@+id/user_img"
-                    style="@style/user_img"/>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_img_height"
+                    android:fitsSystemWindows="true">
+
+                    <ImageView
+                        android:id="@+id/user_profile_iv"
+                        style="@style/user_image"/>
+
+                    <RelativeLayout
+                        android:id="@+id/profile_placeholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_gray_background"
+                        android:visibility="gone"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/photo_placeholder"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/spacing_small_8"
+                            android:fontFamily="sens-serif-medium"
+                            android:text="@string/user_profile_placeholder_image_title"
+                            android:textColor="@color/color_white"/>
+
+                        <ImageView
+                            android:id="@+id/photo_placeholder"
+                            android:layout_width="@dimen/placeholder_photo_size_90"
+                            android:layout_height="@dimen/placeholder_photo_size_90"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/size_medium_56"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_add_a_photo_black_24dp"/>
+                    </RelativeLayout>
+                </FrameLayout>
 
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/toolbar"
@@ -105,6 +141,7 @@
                         style="@style/infoContent">
 
                         <android.support.design.widget.TextInputLayout
+                            android:id="@+id/phone_ti"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -118,6 +155,7 @@
                     </LinearLayout>
 
                     <ImageView
+                        android:id="@+id/call_phone_iv"
                         style="@style/icon.right"
                         android:src="@drawable/phone_icon"/>
                 </LinearLayout>
@@ -137,6 +175,7 @@
                         style="@style/infoContent">
 
                         <android.support.design.widget.TextInputLayout
+                            android:id="@+id/email_ti"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -151,6 +190,7 @@
                     </LinearLayout>
 
                     <ImageView
+                        android:id="@+id/send_email_iv"
                         style="@style/icon.right"
                         android:src="@drawable/send_icon"/>
                 </LinearLayout>
@@ -170,6 +210,7 @@
                         style="@style/infoContent">
 
                         <android.support.design.widget.TextInputLayout
+                            android:id="@+id/vk_profile_ti"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -184,6 +225,7 @@
                     </LinearLayout>
 
                     <ImageView
+                        android:id="@+id/show_vk_iv"
                         style="@style/icon.right"
                         android:src="@drawable/eye_icon"/>
                 </LinearLayout>
@@ -203,6 +245,7 @@
                         style="@style/infoContent">
 
                         <android.support.design.widget.TextInputLayout
+                            android:id="@+id/git_ti"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -217,6 +260,7 @@
                     </LinearLayout>
 
                     <ImageView
+                        android:id="@+id/show_git_iv"
                         style="@style/icon.right"
                         android:src="@drawable/eye_icon"/>
                 </LinearLayout>
