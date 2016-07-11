@@ -11,7 +11,7 @@
     android:paddingTop="@dimen/size_small_24">
 
     <ImageView
-        android:id="@+id/avatar"
+        android:id="@+id/user_avatar_iv"
         android:layout_width="@dimen/spacing_large_60"
         android:layout_height="@dimen/spacing_large_60"
         android:layout_marginTop="@dimen/spacing_normal_16"
