@@ -1,4 +1,8 @@
 <resources>
+    <string name="ff_medium">sans-serif-medium</string>
+    <string name="ff_regular">sans-serif-regular</string>
+
+
     <string name="app_name">@string/string_name</string>
     <string name="string_name">Исаков Владислав</string>
     <string name="string_vk_profile">Профиль VK</string>
@@ -33,8 +37,26 @@
     <string name="give_permission_message">Для корректной работы приложения необходимо дать требуемые разрешения</string>
     <string name="allow_message">Разрешить</string>
     <string name="sing_in">ВОЙТИ</string>
+
+
+    <string name="validation_msg_phone">Введите номер телефона в формате\n +x xxx xxx-xx-xx (от 11 до 20 цифр)</string>
+    <string name="validation_msg_email">Недопустимый адрес электронной почты</string>
+    <string name="validation_msg_vk">Адрес аккаунта VK должен иметь формат vk.com/ххх</string>
+    <string name="validation_msg_git">Адрес аккаунта GitHub должен иметь формат github.com/ххх</string>
     <string name="err_msg_phone">Неверно! Формат: +x xxx xxx-xx-xx</string>
     <string name="err_msg_email">Неверный e-mail. Формат: xxx@xx.xx</string>
     <string name="err_msg_vk">Неверно! Формат: vk.com/ххх</string>
     <string name="err_msg_git">Неверно! Формат: github.com/ххх</string>
+
+    <string name="auth.authorization_enter">Войти</string>
+    <string name="auth.email">Введите E-mail</string>
+    <string name="auth.password">Введите пароль</string>
+    <string name="auth.login">Войти</string>
+    <string name="auth.remember">Забыли пароль?</string>
+
+    <string name="snackbar_msg.edit_on">Редактирование включено</string>
+    <string name="snackbar_msg.data_saved">Данные сохранены</string>
+    <string name="chooser_title.send_mail">Отправить письмо</string>
+    <string name="snackbar_msg.permissions_request">Для корректной работы приложения необходимо дать требуемые разрешения</string>
+    <string name="action.allow_permissions">Разрешить</string>
 </resources>
