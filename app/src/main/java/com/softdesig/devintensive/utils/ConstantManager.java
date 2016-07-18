@@ -59,4 +59,6 @@ public interface ConstantManager {
 
     String USER_PHOTO_URL_KEY = "USER_PHOTO_URL_KEY";
     String USER_AVATAR_URL_KEY = "USER_AVATAR_URL_KEY";
+
+    String PARCELABLE_KEY = "PARCELABLE_KEY";
 }

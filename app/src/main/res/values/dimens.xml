@@ -51,4 +51,6 @@
     <dimen name="profile_image_size">256dp</dimen>
     <dimen name="avatar_size">60dp</dimen>
 
+    <dimen name="line_size">1dp</dimen>
+    <dimen name="line_size_2">2dp</dimen>
 </resources>
